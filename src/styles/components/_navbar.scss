@@ -1,0 +1,27 @@
+@import "../constants/variables";
+@import "../constants/mixins";
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    width: 100%;
+    padding: 0 136px;
+    background-color: $navbar-color;
+    .__wrapper {
+        height: 100%;
+        width: 100%;
+        @include flexContainer(row);
+        justify-content: space-between;
+    }
+    .__menu {
+        @include flexContainer(row);
+        @include primaryTextStyle(16px, 400);
+        color: $text-accent-color;
+    }
+    .__item {
+        list-style-type: none;
+        padding: 0 20px;
+    }
+}
