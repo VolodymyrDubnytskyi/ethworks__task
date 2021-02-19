@@ -1,31 +1,22 @@
 import React from "react";
-import logo from "../assets/logo.svg";
-const menu = [
-  { id: 1, name: "ICO" },
-  { id: 2, name: "Team" },
-  { id: 2, name: "Contact" },
-];
+import "plyr-react/dist/plyr.css";
+import Header from "./Header/Header";
+import Team from "./Content/Team";
+import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
+import Nav from "./Navbar/Nav";
+import navMenu from "../data/navMenu";
+import mainHeading from "../data/mainHeading";
 
-const Main = (props) => {
+const Main = () => {
   return (
-    <div className="main">
-      <nav className="nav">
-        <div className="__wrapper container">
-          <img src={logo} alt="logo" className="__logo" />
-          <ul className="__menu">
-            {menu.map((item) => {
-              const { id, name } = item;
-              return (
-                <li key={id} className="__item">
-                  {name}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </nav>
-      <header className="header"></header>
-    </div>
+    <section className="main">
+      <Nav navMenu={navMenu}/>
+      <Header mainHeading={mainHeading}/>
+      <Team/>
+      <Contact/>
+      <Footer/>
+    </section>
   );
 };
 export default Main;

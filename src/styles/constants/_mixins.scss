@@ -1,13 +1,32 @@
-@import './variables';
+@import "./variables";
 
 @mixin flexContainer($direction) {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: $direction;
-};
-@mixin primaryTextStyle ($size, $fontWeight){
-    font-family: $primary-font;
+}
+@mixin textStyle($font, $size, $fontWeight, $fontStyle, $lineHeight) {
+    font-family: $font;
     font-size: $size;
     font-weight: $fontWeight;
+    font-style: $fontStyle;
+    line-height: $lineHeight;
+}
+@mixin absolute($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}
+@mixin formElReset {
+    outline: none;
+    border: none;
+}
+@mixin btnStyle {
+    @include formElReset();
+    cursor: pointer;
+    background: $accent-color;
+    border-radius: 25px;
+    color: $light-color;
+    text-align: center;    
 }
