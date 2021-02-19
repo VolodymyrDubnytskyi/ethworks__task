@@ -6,7 +6,7 @@
     min-height: 950px;
     background-image: url(../../assets/header_bg.svg);
     background-size: cover;
-    background-position: 0 top;
+    background-position: 0 -70px;
     background-repeat: no-repeat;
     &__wrapper {
         @include flexContainer(row);
@@ -53,11 +53,6 @@
         right:-45px;
         width: 50%;
     }
-}
-@media (min-width: 1440){
-      .header{
-        background-position: 0 -70px;
-      }
 }
 @media (max-width: 1325px) {
     .header {
