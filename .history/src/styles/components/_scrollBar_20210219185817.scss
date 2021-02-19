@@ -1,0 +1,23 @@
+@import "../constants/mixins";
+@import "../constants/variables";
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    // background: rgba(0, 0, 0, 0.1);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: $scrollbar-color; 
+    border-radius: 10px;
+    width: 5px;
+    height: 50px;
+    &:hover{
+        background-color: $scrollbar-color--active; 
+    }
+  }

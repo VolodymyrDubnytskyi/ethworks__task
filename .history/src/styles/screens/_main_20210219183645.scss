@@ -1,0 +1,29 @@
+@import './header';
+@import './navbar';
+@import './team';
+@import './contact';
+@import './footer';
+@import '../components/carusel';
+@import '../components/video';
+@import '../components/arrow';
+@import '../components/btn';
+@import '../components/modal';
+@import '../components/socialMedia';
+@import '../components/closeBtn';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ::after {
+        box-sizing: border-box;
+    }
+    ::before {
+        box-sizing: border-box;
+    }
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+

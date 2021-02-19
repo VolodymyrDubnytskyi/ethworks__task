@@ -1,0 +1,47 @@
+@import "../constants/mixins";
+@import "../constants/variables";
+
+.social_media {
+    @include flexContainer(column);
+    position: fixed;
+    right: 125px;
+    bottom: 17%;
+    &__container {
+        @include flexContainer(row);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: $social-media-color;
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+    .fab {
+        color: $light-color;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1235px) {
+    .social_media {
+        right: 35px;
+        bottom: 17%;
+    }
+}
+@media (max-width: 450px) {
+    .social_media {
+        &__container {
+            width: 30px;
+            height: 30px;
+        }
+        .fab {
+            font-size: 16px;
+        }
+    }
+}
+@media (max-height: 700px) and (max-width: 450px) {
+    .social_media {
+        bottom: 0;
+        margin-bottom: 35px;
+    }
+}

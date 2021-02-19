@@ -1,0 +1,30 @@
+@import "../constants/variables";
+@import "../constants/mixins";
+
+.close_btn {
+    @include absolute(0, auto);
+    cursor: pointer;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    margin: 32px;
+    border-radius: 50%;
+    border: 2px solid $close-btn-color;
+    transition: 0.5s;
+    &__vector {
+        @include absolute(50%, 50%);
+        transform: translate(-50%, -50%) rotate(45deg);
+        width: 75%;
+        height: 2px;
+        background-color: $close-btn-color;
+        &:last-child{
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+    &:hover{
+        border: 2px solid #DC3545;
+        .close_btn__vector{
+            background-color: #DC3545;
+        }
+    }
+}

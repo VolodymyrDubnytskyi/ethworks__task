@@ -1,0 +1,38 @@
+@import './header';
+@import './navbar';
+@import './team';
+@import './contact';
+@import './footer';
+@import '../components/carusel';
+@import '../components/video';
+@import '../components/arrow';
+@import '../components/btn';
+@import '../components/modal';
+@import '../components/socialMedia';
+@import '../components/closeBtn';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ::after {
+        box-sizing: border-box;
+    }
+    ::before {
+        box-sizing: border-box;
+    }
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.input {
+    @include formElReset();
+    height: 46px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 20px;
+    &::placeholder {
+        @include textStyle($primary-font, 17px, 400, normal, 20px);
+    }
+}
