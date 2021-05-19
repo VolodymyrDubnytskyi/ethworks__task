@@ -4,6 +4,7 @@
 .team {
     &__container {
         @include flexContainer(row);
+        padding: 40px 0 88px 0;
         width: 100%;
     }
     &__heading {
@@ -64,15 +65,15 @@
     }
 }
 .team.container {
-    padding: 40px 0 88px 0;
+    padding: 88px 0;
 }
-.rec-carousel-item{
-    &:focus{
+.rec-carousel-item {
+    &:focus {
         border: none;
     }
 }
-@media (max-width: 400px){
-    .team.container{
-        padding: 0 0 88px 0;
-    }
-}
+// @media (max-width: 985px) {
+//     .team.container {
+//         padding: 88px 0;
+//     }
+// }

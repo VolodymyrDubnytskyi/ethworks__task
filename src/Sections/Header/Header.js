@@ -1,25 +1,26 @@
 import React from "react";
-import SocialMedia from "../../Components/SocialMedia";
-import Arrow from "../../Components/Arrow";
-import HeaderForm from "./HeaderForm";
-import HeaderVideo from "./HeaderVideo";
+import mainHeading from "data/mainHeading";
+import HeaderHeading from "Sections/Header/HeaderHeading";
+import HeaderForm from "Sections/Header/HeaderForm";
+import HeaderVideo from "Sections/Header/HeaderVideo";
+import SocialMedia from "Components/SocialMedia";
+import Arrow from "Components/Arrow";
 
-const Header = (props) => {
-  const { mainHeading } = props;
+function Header() {
   return (
     <header className="header" id="headerSection">
       <div className="header__wrapper container">
         <section className="header__content">
-          <h1 className="header__main_heading">{mainHeading}</h1>
+          <HeaderHeading mainHeading={mainHeading} />
           <HeaderForm />
-          <SocialMedia/>
-          <Arrow />
+          <SocialMedia />
         </section>
         <section className="header__video_container">
           <HeaderVideo />
         </section>
+        <Arrow />
       </div>
     </header>
   );
-};
+}
 export default Header;

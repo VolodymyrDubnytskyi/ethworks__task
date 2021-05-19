@@ -2,17 +2,19 @@
 @import "../constants/variables";
 
 .header {
+    min-height: 908px;
+    max-height: 1000px;
     height: 100vh;
-    min-height: 980px;
     background-image: url(../../assets/header_bg.svg);
-    background-size: cover;
-    background-position: 0 top;
+    background-size: 1552px;
+    background-position: center;
     background-repeat: no-repeat;
     &__wrapper {
         @include flexContainer(row);
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        position: relative;
         width: 100%;
-        height: calc(100vh - 70px);
+        height: calc(100% - 70px);
         padding-top: 70px;
     }
     &__content {
@@ -54,14 +56,17 @@
         width: 50%;
     }
 }
-@media (min-width: 1500px){
+@media (min-width: 1552px){
       .header{
-        background-size: 180%;
-        background-position: center;
+        background-size: cover;
+        background-position: left bottom -12vw;
       }
 }
 @media (max-width: 1325px) {
     .header {
+        &__wrapper{
+             padding: 0 20px;
+        }
          &__video_container {
         right: -10px;
        }
@@ -70,15 +75,15 @@
 @media (max-width: 1220px) {
     .header {
         &__wrapper {
-            padding: 70px 20px 0 20px;
+            padding: 70px 40px 0 40px;
         }
     }
 }
 @media (max-width: 1150px) {
     .header {
         &__main_heading {
-            font-size: 39px;
-            line-height: 55px;
+            // font-size: 34px;
+            // line-height: 50px;
         }
         .video {
             width: 465px;
@@ -87,12 +92,12 @@
 }
 @media (max-width: 985px) {
     .header {
-        padding: 118px 80px 0 80px;
+        padding: 198px 79px 0 79px;
         height: auto;
-        background-position: center;
+        background-position: top;
+        background-size: 1325px;
         &__wrapper {
             flex-direction: column;
-            height: 100%;
             padding: 0;
         }
         &__content {
@@ -100,10 +105,13 @@
         }
         &__video_container {
             @include flexContainer(row);
-            margin-top: 250px;
+            margin-top: 320px;
             width: 100%;
             top: 0;
             right: auto;
+        }
+        &__input_wrapper{
+            width: 515px;
         }
         .video {
             width: 544px;
@@ -112,6 +120,7 @@
 }
 @media (max-width: 700px){
       .header{
+        background-size: 1178px;
         &__input_wrapper {
             width: 100%;
         }
@@ -147,6 +156,7 @@
 }
 @media (max-width: 500px){
       .header{
+        background-size: 1000px;
         &__main_heading {
             @include textStyle($primary-font, 28px, 600, 400, 40px);
         }
@@ -155,6 +165,13 @@
             line-height: 14px;
         }
       }
+}
+@media (max-width: 450px) {
+    .header{
+        &__video_container{
+            margin-top: 200px;
+        }
+    }
 }
 @media (max-width: 380px){
       .header{

@@ -1,13 +1,12 @@
 import React from "react";
-import Button from "../../Components/Button";
-import Input from "../../Components/Input";
+import HeaderFomrHeading from "Sections/Header/HeaderFomrHeading";
+import Button from "Components/Button";
+import Input from "Components/Input";
 
-const HeaderForm = (props) => {
+function HeaderForm() {
   return (
     <form className="header__form_wrapper">
-      <h2 className="header__form_heading">
-        Subscribe and get the lastes information
-      </h2>
+      <HeaderFomrHeading formHeading="Subscribe and get the lastes information" />
       <div className="header__input_wrapper">
         <Input
           nameOfClass="header__input input"
@@ -18,5 +17,5 @@ const HeaderForm = (props) => {
       </div>
     </form>
   );
-};
+}
 export default HeaderForm;

@@ -1,20 +1,15 @@
 import React from "react";
-import footerMenu from "../../data/footerMenu";
+import footerMenu from "data/footerMenu";
+import FooterMenuItem from "./FooterMenuItem";
 
-const FooterMenu = (props) => {
+function FooterMenu() {
   return (
     <ul className="footer__menu">
       {footerMenu.map((item) => {
         const { id, name } = item;
-        return (
-          <li key={id} className="footer__menu_item">
-            <a href="#" className="footer__menu_link">
-              {name}
-            </a>
-          </li>
-        );
+        return <FooterMenuItem key={id} name={name} />;
       })}
     </ul>
   );
-};
+}
 export default FooterMenu;

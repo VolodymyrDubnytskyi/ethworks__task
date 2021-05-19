@@ -1,6 +1,6 @@
 import React from "react";
 
-const SocialMedia = (props) => {
+const SocialMedia = () => {
   return (
     <div className="social_media">
       <div className="social_media__container">

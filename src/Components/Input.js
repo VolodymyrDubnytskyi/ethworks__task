@@ -1,7 +1,6 @@
 import React from "react";
 
-const Input = (props) => {
-  const { type, nameOfClass, placeholderText } = props;
+const Input = ({ type, nameOfClass, placeholderText }) => {
   return (
     <input
       type={type}

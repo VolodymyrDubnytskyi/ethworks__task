@@ -5,12 +5,12 @@
     cursor: pointer;
     position: absolute;
     left: 50%;
-    bottom: 7%;
+    bottom: 10%;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 1px solid $circle-color;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     overflow:hidden ;
     &::after {
         content: url(../../assets/arrow-down.svg);
@@ -30,7 +30,6 @@
 }
 @media (max-width: 985px) {
     .circle {
-        top: 580px;
         bottom: auto;
     }
 }
@@ -38,6 +37,7 @@
     .circle {
         width: 30px;
         height: 30px;
+        margin-top: 80px;
         &::after{
             transform: translate(-50%, -50%) scale(.5);
         }

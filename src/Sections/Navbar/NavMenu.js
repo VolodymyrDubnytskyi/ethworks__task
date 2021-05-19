@@ -1,29 +1,15 @@
 import React from "react";
-import { Link } from "react-scroll";
+import navMenu from "data/navMenu";
+import NavMenuItem from "Sections/Navbar/NavMenuItem";
 
-const NavMenu = (props) => {
-  const { navMenu } = props;
+function NavMenu() {
   return (
     <ul className="nav__menu">
       {navMenu.map((item) => {
-        const { id, name, target } = item;
-        return (
-          <li key={id} className="nav__item">
-            <Link 
-            className='nav__link'
-            activeClass="nav__link--active"
-            to={target} 
-            spy={true} 
-            smooth={true} 
-            duration={500}
-            offset={-150}
-            >
-              {name}
-            </Link>
-          </li>
-        );
+        const { id } = item;
+        return <NavMenuItem key={id} item={item} />;
       })}
     </ul>
   );
-};
+}
 export default NavMenu;

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import video from "../../assets/header_video.mp4";
+import video from "assets/header_video.mp4";
 import Plyr from "plyr";
 
 const HeaderVideo = () => {

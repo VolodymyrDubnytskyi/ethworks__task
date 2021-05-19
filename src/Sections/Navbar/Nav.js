@@ -1,16 +1,15 @@
 import React from "react";
-import Logo from "../../Components/Logo";
-import NavMenu from "./NavMenu";
+import Logo from "Components/Logo";
+import NavMenu from "Sections/Navbar/NavMenu";
 
-const Nav = (props) => {
-  const { navMenu } = props;
+function Nav() {
   return (
     <nav className="nav">
       <div className="nav__wrapper container">
         <Logo nameOfClass="nav__logo" />
-        <NavMenu navMenu={navMenu} />
+        <NavMenu />
       </div>
     </nav>
   );
-};
+}
 export default Nav;
