@@ -2,9 +2,8 @@
 @import "../constants/variables";
 
 .header {
-    min-height: 908px;
-    max-height: 1000px;
-    height: 100vh;
+    // min-height: 908px;
+    height: 908px;
     background-image: url(../../assets/header_bg.svg);
     background-size: 1552px;
     background-position: center;
@@ -54,6 +53,9 @@
         top: -85px;
         right:-45px;
         width: 50%;
+    }
+    .video{
+        height: 382px;
     }
 }
 @media (min-width: 1552px){
@@ -132,7 +134,7 @@
 }
 @media (max-width: 600px){
       .header{
-          padding: 118px 16px 0 16px;
+          padding: 118px 40px 0 40px;
         &__form_wrapper{
             width: 100%;
         }
@@ -164,12 +166,16 @@
             font-size: 14px;
             line-height: 14px;
         }
+        &__video_container {
+            @include flexContainer(row);
+            margin-top: 220px;
+        }
       }
 }
 @media (max-width: 450px) {
     .header{
         &__video_container{
-            margin-top: 200px;
+            margin-top: 25vh;
         }
     }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "plyr-react/dist/plyr.css";
 import Nav from "Sections/Navbar/Nav";
 import Header from "Sections/Header/Header";
 import Team from "Sections/Team/Team";

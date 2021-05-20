@@ -1,16 +1,17 @@
-import React, { useEffect } from "react";
-import video from "assets/header_video.mp4";
-import Plyr from "plyr";
+import React from "react";
+import ReactPlayer from "react-player";
+import video_start_icon from "assets/video_start_icon.svg";
 
 const HeaderVideo = () => {
-  useEffect(() => {
-    new Plyr("#player");
-  });
   return (
     <div className="video">
-      <video id="player" playsInline controls>
-        <source src={video} type="video/mp4" />
-      </video>
+      <ReactPlayer
+        light={video_start_icon}
+        width="100%"
+        height="100%"
+        controls={true}
+        url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+      />
     </div>
   );
 };
