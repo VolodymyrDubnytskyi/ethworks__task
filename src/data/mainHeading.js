@@ -1,1 +1,0 @@
-export default  "The first fully-automatic social crypto trading platform with real crypto currency";

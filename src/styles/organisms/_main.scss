@@ -1,0 +1,35 @@
+@import 'styles/organisms/header';
+@import 'styles/organisms/navbar';
+@import 'styles/organisms/team';
+@import 'styles/organisms/contact';
+@import 'styles/organisms/footer';
+@import 'styles/atoms/carusel';
+@import 'styles/atoms/video';
+@import 'styles/atoms/arrow';
+@import 'styles/atoms/customButton';
+@import 'styles/atoms/modal';
+@import 'styles/atoms/socialMedia';
+@import 'styles/atoms/closeButton';
+@import 'styles/atoms/scrollbar';
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  * ::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  * ::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+

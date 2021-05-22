@@ -1,6 +1,5 @@
-import 'App.css';
 import 'App.scss';
-import Main from 'pages/Main';
+import Main from 'organisms/Main';
 
 function App() {
   return (

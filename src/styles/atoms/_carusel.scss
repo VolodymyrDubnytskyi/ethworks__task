@@ -9,6 +9,12 @@
     }
 }
 
+.rec-carousel-item {
+    &:focus {
+        border: none;
+    }
+}
+
 .rec-arrow {
     display: none;
 }

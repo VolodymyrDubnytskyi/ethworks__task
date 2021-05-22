@@ -1,7 +1,7 @@
 @import "../constants/mixins";
 @import "../constants/variables";
 
-.social_media {
+.socialMedia {
     @include flexContainer(column);
     cursor: pointer;
     position: fixed;
@@ -29,14 +29,14 @@
 
 // media queries breakpoints
 @media (max-width: 1235px) {
-    .social_media {
+    .socialMedia {
         right: 35px;
         bottom: 17%;
     }
 }
 
 @media (max-width: 450px) {
-    .social_media {
+    .socialMedia {
         &__container {
             width: 30px;
             height: 30px;
@@ -52,7 +52,7 @@
 }
 
 @media (max-height: 700px) and (max-width: 450px) {
-    .social_media {
+    .socialMedia {
         bottom: 0;
         margin-bottom: 35px;
     }

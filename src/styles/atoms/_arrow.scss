@@ -13,7 +13,7 @@
     transform: translateX(-50%);
     overflow: hidden;
     &::after {
-        content: url(../../assets/arrow-down.svg);
+        content: url(../../assets/images/layout/arrow-down.svg);
         display: inline-block;
         position: absolute;
         top: 50%;
@@ -31,7 +31,7 @@
 }
 
 // media queries breakpoints
-@media (max-width: 985px) {
+@media (max-width: 1050px) {
     .circle {
         bottom: auto;
     }

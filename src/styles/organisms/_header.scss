@@ -1,0 +1,220 @@
+@import "../constants/mixins";
+@import "../constants/variables";
+
+.header {
+    min-height: 908px;
+    height: 100vh;
+    background-image: url(../../assets/images/layout/header_bg.svg);
+    background-size: 1550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__wrapper {
+        @include flexContainer(row);
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+        height: calc(100% - 70px);
+        padding-top: 70px;
+    }
+    &__content {
+        @include flexContainer(column);
+        align-items: flex-start;
+        width: 50%;
+        height: 100%;
+    }
+    &__mainHeading {
+        @include textStyle($primary-font, 40px, 600, normal, 56px);
+        letter-spacing: 0.2px;
+        color: $light-color;
+        margin-bottom: 74px;
+        width: 568px;
+    }
+    &__formWrapper {
+        width: 100%;
+    }
+    &__formHeading {
+        @include textStyle($primary-font, 18px, 400, normal, 26px);
+        color: $light-color;
+        opacity: 0.7;
+        margin-bottom: 18px;
+    }
+    &__inputWrapper {
+        position: relative;
+        width: 480px;
+    }
+    &__formBtn {
+        @include absolute(0, auto);
+        @include textStyle($additional-font, 17px, 600, normal, 23px);
+        height: 46px;
+        width: 154px;
+        right: -88px;
+    }
+    &__videoContainer {
+        @include flexContainer(row);
+        justify-content: flex-end;
+        position: relative;
+        top: -85px;
+        right: -45px;
+        width: 50%;
+    }
+    .video {
+        width: 544px;
+        height: 382px;
+    }
+}
+
+// media queries breakpoints
+@media (min-width: 1552px) {
+    .header {
+        background-size: cover;
+        background-position: left bottom -12vw;
+    }
+}
+
+@media (max-width: 1325px) {
+    .header {
+        &__wrapper {
+            padding: 0 20px;
+        }
+        &__videoContainer {
+            right: -10px;
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    .header {
+        &__wrapper {
+            padding: 70px 40px 0 40px;
+        }
+    }
+}
+
+@media (max-width: 1150px) and (min-width: 1050px) {
+    .header {
+        .video {
+            width: 445px;
+            height: 316px;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .header {
+        padding: 198px 79px 0 79px;
+        height: auto;
+        background-position: top;
+        background-size: 1325px;
+        &__wrapper {
+            flex-direction: column;
+            padding: 0;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__videoContainer {
+            @include flexContainer(row);
+            margin-top: 320px;
+            width: 100%;
+            top: 0;
+            right: auto;
+        }
+        &__inputwrapper {
+            width: 515px;
+        }
+    }
+}
+@media (max-width: 750px) {
+    .header {
+        &__inputWrapper {
+            width: calc(100% - 100px);
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 198px 60px 0 60px;
+        background-size: 1225px;
+        &__inputwrapper {
+            width: 100%;
+        }
+        &__mainHeading {
+            width: 100%;
+            @include textStyle($primary-font, 34px, 600, normal, 50px);
+        }
+    }
+}
+@media (max-width: 661px) {
+    .header {
+        background-size: 1285px;
+        &__videoContainer {
+            margin-top: 380px;
+        }
+    }
+}
+@media (max-width: 627px) and (min-width: 600px) {
+    .header {
+        &__videoContainer {
+            margin-top: 330px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 118px 42px 0 42px;
+        &__formWrapper {
+            width: 100%;
+        }
+        &__inputWrapper {
+            width: 100%;
+        }
+        &__input {
+            margin: 16px 0;
+        }
+        &__mainHeading {
+            width: 100%;
+        }
+        &__formHeading {
+            margin: 0;
+        }
+        &__formBtn {
+            position: static;
+            width: 100%;
+        }
+        .video {
+            height: 55vw;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        background-size: 1000px;
+        &__mainHeading {
+            @include textStyle($primary-font, 28px, 600, 400, 40px);
+        }
+        &__formHeading {
+            font-size: 14px;
+            line-height: 14px;
+        }
+        &__videoContainer {
+            @include flexContainer(row);
+            margin-top: 220px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 118px 20px 0 20px;
+        &__mainHeading {
+            @include textStyle($primary-font, 24px, 600, 400, 32px);
+        }
+        &__formHeading {
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+}

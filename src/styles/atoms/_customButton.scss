@@ -1,0 +1,9 @@
+@import "../constants/mixins";
+@import "../constants/variables";
+
+.btn {
+    @include btnStyle();
+    &:hover {
+        background-color: $accent-color--active;
+    }
+}

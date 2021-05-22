@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialMediaContainer = ({ link, name }) => {
   return (
-    <div className="social_media__container">
+    <div className="socialMedia__container">
       <a href={link}>
         <i className={`fab fa-${name}`}></i>
       </a>
