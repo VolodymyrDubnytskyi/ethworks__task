@@ -12,4 +12,4 @@ To open the project, please act as advised below:
 2. use **npm install** comand in your terminal to install all the packages you need;
 3. in your terminal enter the folder whare project is located and use command **npm start** to run the project;
 
-Also this link **https://volodymyrdubnytskyi.github.io/ethworks__task/** will direct you to browser version webpage.
+Also this link **https://volodymyrdubnytskyi.github.io/recruitment_task/** will direct you to browser version webpage.
