@@ -36,12 +36,16 @@
         bottom: auto;
     }
 }
+@media (max-width: 600px) {
+    .circle {
+        margin-top: 137px;
+    }
+}
 
 @media (max-width: 450px) {
     .circle {
         width: 30px;
         height: 30px;
-        margin-top: 80px;
         &::after {
             transform: translate(-50%, -50%) scale(0.5);
         }

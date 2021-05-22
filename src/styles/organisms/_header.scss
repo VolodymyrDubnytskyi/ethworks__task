@@ -134,8 +134,11 @@
 
 @media (max-width: 700px) {
     .header {
-        padding: 198px 60px 0 60px;
+        padding: 0;
         background-size: 1225px;
+        &__content {
+            padding: 198px 60px 0 60px;
+        }
         &__inputwrapper {
             width: 100%;
         }
@@ -153,7 +156,7 @@
         }
     }
 }
-@media (max-width: 627px) and (min-width: 600px) {
+@media (max-width: 627px) and (min-width: 601px) {
     .header {
         &__videoContainer {
             margin-top: 330px;
@@ -163,7 +166,9 @@
 
 @media (max-width: 600px) {
     .header {
-        padding: 118px 42px 0 42px;
+        &__content {
+            padding: 118px 42px 0 42px;
+        }
         &__formWrapper {
             width: 100%;
         }
@@ -184,7 +189,8 @@
             width: 100%;
         }
         .video {
-            height: 55vw;
+            width: 440px;
+            height: 308px;
         }
     }
 }
@@ -203,18 +209,28 @@
             @include flexContainer(row);
             margin-top: 220px;
         }
+        .video {
+            width: 380px;
+            height: 266px;
+        }
     }
 }
 
 @media (max-width: 400px) {
     .header {
-        padding: 118px 20px 0 20px;
+        &__content {
+            padding: 118px 20px 0 20px;
+        }
         &__mainHeading {
             @include textStyle($primary-font, 24px, 600, 400, 32px);
         }
         &__formHeading {
             font-size: 14px;
             line-height: 14px;
+        }
+        .video {
+            width: 288px;
+            height: 202px;
         }
     }
 }
