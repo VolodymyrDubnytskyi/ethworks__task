@@ -8,7 +8,7 @@ Doing this webpage. I have used HTML and CSS while tried to utilize as little JS
 Additionally, the BEM class naming convention was kept.
 
 To open the project, please act as advised below:
-1. clone the reposetory to your local folder using the command **git clone "https://github.com/VolodymyrDubnytskyi/ethworks__task.git"** in your terminal;
+1. clone the reposetory to your local folder using the command **git clone "https://github.com/VolodymyrDubnytskyi/recruitment_task.git"** in your terminal;
 2. use **npm install** comand in your terminal to install all the packages you need;
 3. in your terminal enter the folder whare project is located and use command **npm start** to run the project;
 
