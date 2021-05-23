@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/recruitment_task/static/css/main.ed15937c.chunk.css",
+    "main.css": "/recruitment_task/static/css/main.286b83d2.chunk.css",
     "main.js": "/recruitment_task/static/js/main.c79118d3.chunk.js",
     "main.js.map": "/recruitment_task/static/js/main.c79118d3.chunk.js.map",
     "runtime-main.js": "/recruitment_task/static/js/runtime-main.6c94e9c7.js",
@@ -8,7 +8,7 @@
     "static/js/2.eddc2cde.chunk.js": "/recruitment_task/static/js/2.eddc2cde.chunk.js",
     "static/js/2.eddc2cde.chunk.js.map": "/recruitment_task/static/js/2.eddc2cde.chunk.js.map",
     "index.html": "/recruitment_task/index.html",
-    "static/css/main.ed15937c.chunk.css.map": "/recruitment_task/static/css/main.ed15937c.chunk.css.map",
+    "static/css/main.286b83d2.chunk.css.map": "/recruitment_task/static/css/main.286b83d2.chunk.css.map",
     "static/js/2.eddc2cde.chunk.js.LICENSE.txt": "/recruitment_task/static/js/2.eddc2cde.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/recruitment_task/static/media/header_bg.36692d8e.svg",
     "static/media/fotoDavidBanks.d98d31c1.svg": "/recruitment_task/static/media/fotoDavidBanks.d98d31c1.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.6c94e9c7.js",
     "static/js/2.eddc2cde.chunk.js",
-    "static/css/main.ed15937c.chunk.css",
+    "static/css/main.286b83d2.chunk.css",
     "static/js/main.c79118d3.chunk.js"
   ]
 }
