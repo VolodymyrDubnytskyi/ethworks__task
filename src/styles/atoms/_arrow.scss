@@ -6,8 +6,8 @@
     position: absolute;
     left: 50%;
     bottom: 10%;
-    width: 60px;
-    height: 60px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
     border: 1px solid $circle-color;
     transform: translateX(-50%);
@@ -38,14 +38,15 @@
 }
 @media (max-width: 600px) {
     .circle {
-        margin-top: 137px;
+        margin-top: 175px;
     }
 }
 
 @media (max-width: 450px) {
     .circle {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
+        margin-top: 200px;
         &::after {
             transform: translate(-50%, -50%) scale(0.5);
         }
