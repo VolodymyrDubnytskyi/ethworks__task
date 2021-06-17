@@ -1,1 +1,15 @@
-@import './styles/organisms/main';
+@import 'styles/organisms/main';
+@import "styles/organisms/header";
+@import "styles/organisms/navbar";
+@import "styles/organisms/team";
+@import "styles/organisms/contact";
+@import "styles/organisms/footer";
+@import "styles/atoms/carusel";
+@import "styles/atoms/video";
+@import "styles/atoms/arrow";
+@import "styles/atoms/customButton";
+@import "styles/atoms/customLoader";
+@import "styles/atoms/modal";
+@import "styles/atoms/socialMedia";
+@import "styles/atoms/closeButton";
+@import "styles/atoms/scrollbar";

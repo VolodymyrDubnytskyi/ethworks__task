@@ -3,11 +3,8 @@
 
 .header {
     min-height: 908px;
+    max-height: 978px;
     height: 100vh;
-    background-image: url(../../assets/images/layout/header_bg.svg);
-    background-size: 1550px;
-    background-position: center;
-    background-repeat: no-repeat;
     &__wrapper {
         @include flexContainer(row);
         flex-wrap: wrap;
@@ -23,7 +20,7 @@
         height: 100%;
     }
     &__mainHeading {
-        @include textStyle($primary-font, 40px, 600, normal, 56px);
+        @include textStyle($primary-font, 40px, 700, normal, 56px);
         letter-spacing: 0.2px;
         color: $light-color;
         margin-bottom: 74px;
@@ -43,11 +40,12 @@
         width: 480px;
     }
     &__formBtn {
-        @include absolute(0, auto);
+        @include absolute(50%, auto);
         @include textStyle($additional-font, 17px, 600, normal, 23px);
-        height: 46px;
+        height: 47px;
         width: 154px;
-        right: -88px;
+        right: -66px;
+        transform: translateY(-50%);
     }
     &__videoContainer {
         @include flexContainer(row);
@@ -63,15 +61,13 @@
         border-radius: 6px;
         overflow: hidden;
     }
+    .input {
+        padding: 0 20px;
+        margin: 0;
+    }
 }
 
 // media queries breakpoints
-@media (min-width: 1552px) {
-    .header {
-        background-size: cover;
-        background-position: left bottom -12vw;
-    }
-}
 
 @media (max-width: 1325px) {
     .header {
@@ -105,8 +101,8 @@
     .header {
         padding: 198px 79px 0 79px;
         height: auto;
-        background-position: top;
-        background-size: 1325px;
+        max-height: none;
+        min-height: auto;
         &__wrapper {
             flex-direction: column;
             padding: 0;
@@ -115,8 +111,8 @@
             width: 100%;
         }
         &__videoContainer {
-            @include flexContainer(row);
-            margin-top: 320px;
+            justify-content: center;
+            margin-top: 368px;
             width: 100%;
             top: 0;
             right: auto;
@@ -138,32 +134,17 @@
 @media (max-width: 700px) {
     .header {
         padding: 0;
-        background-size: 1225px;
         &__content {
             padding: 198px 60px 0 60px;
-        }
-        &__inputwrapper {
-            width: 100%;
-        }
-        &__mainHeading {
-            width: 100%;
-            @include textStyle($primary-font, 34px, 600, normal, 50px);
-        }
-    }
-}
-@media (max-width: 661px) {
-    .header {
-        background-size: 1285px;
-        &__videoContainer {
-            margin-top: 380px;
         }
     }
 }
 
-@media (max-width: 627px) and (min-width: 601px) {
+@media (max-width: 627px) {
     .header {
-        &__videoContainer {
-            margin-top: 330px;
+        &__mainHeading {
+            width: 100%;
+            @include textStyle($primary-font, 34px, 600, normal, 50px);
         }
     }
 }
@@ -171,18 +152,12 @@
 @media (max-width: 600px) {
     .header {
         &__content {
-            padding: 118px 42px 0 42px;
+            padding: 130px 42px 0 42px;
         }
         &__formWrapper {
             width: 100%;
         }
         &__inputWrapper {
-            width: 100%;
-        }
-        &__input {
-            margin: 16px 0;
-        }
-        &__mainHeading {
             width: 100%;
         }
         &__formHeading {
@@ -191,10 +166,25 @@
         &__formBtn {
             position: static;
             width: 100%;
+            transform: none;
+        }
+        &__videoContainer {
+            margin-top: 230px;
         }
         .video {
             width: 440px;
             height: 308px;
+        }
+        .input {
+            margin: 8px 0 16px 0;
+        }
+    }
+}
+
+@media (max-width: 584px) {
+    .header {
+        &__videoContainer {
+            margin-top: 180px;
         }
     }
 }
@@ -203,14 +193,13 @@
     .header {
         background-size: 1000px;
         &__mainHeading {
-            @include textStyle($primary-font, 28px, 600, 400, 40px);
+            @include textStyle($primary-font, 28px, 700, 400, 40px);
         }
         &__formHeading {
             font-size: 14px;
             line-height: 14px;
         }
         &__videoContainer {
-            @include flexContainer(row);
             margin-top: 220px;
         }
         .video {
@@ -220,17 +209,23 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .header {
         &__content {
-            padding: 118px 20px 0 20px;
+            padding: 118px 16px 0 16px;
         }
         &__mainHeading {
-            @include textStyle($primary-font, 24px, 600, 400, 32px);
+            @include textStyle($primary-font, 24px, 700, 400, 32px);
+            span {
+                display: block;
+            }
         }
         &__formHeading {
             font-size: 14px;
             line-height: 14px;
+        }
+        &__videoContainer {
+            margin-top: 180px;
         }
         .video {
             width: 288px;
@@ -238,3 +233,12 @@
         }
     }
 }
+
+@media (max-width: 360px) {
+    .header {
+        &__videoContainer {
+            margin-top: 140px;
+        }
+    }
+}
+

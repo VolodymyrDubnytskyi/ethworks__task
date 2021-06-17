@@ -19,8 +19,6 @@
     }
     &__menu {
         @include flexContainer(row);
-        @include textStyle($primary-font, 16px, 400, normal, auto);
-        color: $text-accent-color;
     }
     &__item {
         list-style-type: none;
@@ -31,10 +29,13 @@
         }
     }
     &__link {
-        padding: 7px 10px;
-        margin: 0 10px;
+        @include textStyle($primary-font, 16px, 400, normal, 19px);
+        color: $text-accent-color;
+        padding: 6px 4px;
+        margin: 0 16.5px;
         position: relative;
         cursor: pointer;
+        text-decoration: none;
         &::after {
             @include absolute(auto, 0);
             content: "";

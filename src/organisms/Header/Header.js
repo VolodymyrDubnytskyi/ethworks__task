@@ -10,7 +10,7 @@ const Header = () => {
     <header className="header" id="headerSection">
       <div className="header__wrapper container">
         <section className="header__content">
-          <HeaderHeading mainHeading={"The first fully-automatic social crypto trading platform with real crypto currency"} />
+          <HeaderHeading />
           <HeaderForm />
           <SocialMedia />
         </section>

@@ -1,36 +1,86 @@
-@import 'styles/organisms/header';
-@import 'styles/organisms/navbar';
-@import 'styles/organisms/team';
-@import 'styles/organisms/contact';
-@import 'styles/organisms/footer';
-@import 'styles/atoms/carusel';
-@import 'styles/atoms/video';
-@import 'styles/atoms/arrow';
-@import 'styles/atoms/customButton';
-@import 'styles/atoms/modal';
-@import 'styles/atoms/socialMedia';
-@import 'styles/atoms/closeButton';
-@import 'styles/atoms/scrollbar';
-
 * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  * ::after {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-  * ::before {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  
-.container{
-    max-width: 1200px;
-    margin: auto;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+* ::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url(../../assets/images/layout/scene.svg);
+  background-size: 1550px;
+  background-position-y: -85px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+// above default 
+
+@media (min-width: 1552px) {
+  .main {
+    background-size: 2000px;
+    background-position: 0 -350px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .main {
+    background-size: 2500px;
+    background-position: 0 -650px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .main {
+    background-size: 3000px;
+    background-position: 0 -950px;
+  }
+}
+
+// below default
+
+@media (max-width: 627px) {
+  .main {
+    background-size: 1300px;
+    background-position-y: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    background-size: 1200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    background-size: 1050px;
+    background-position-x: -250px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main {
+    background-size: 950px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main {
+    background-size: 920px;
+    background-position-x: -250px;
+  }
+}
