@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { Modal } from "react-responsive-modal";
 import header_video from "assets/video/header_video.mp4";
-import videoIcon from "assets/images/videoIcon.svg";
+import videoIcon from "assets/images/videoIcon.jpg";
 import "react-responsive-modal/styles.css";
 import CustomLoader from "atoms/CustomLoader";
 
