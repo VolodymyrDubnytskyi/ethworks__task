@@ -4,7 +4,7 @@
 .team {
     &__container {
         @include flexContainer(row);
-        padding-top: 45px ;
+        padding-top: 45px;
         width: 100%;
     }
     &__heading {
@@ -97,12 +97,21 @@
         }
     }
     .person {
+        max-width: 150px;
         &__container {
             padding: 0;
         }
         &__img {
             width: 115px;
             height: 115px;
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 34px;
+        }
+        &__description {
+            font-size: 12px;
+            line-height: 18px;
         }
     }
 }
