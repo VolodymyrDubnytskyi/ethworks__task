@@ -32,6 +32,9 @@ body {
         max-width: 968px;
         overflow: hidden;
     }
+    .react-responsive-modal-container{
+        @include flexContainer(row);
+    }
     .react-responsive-modal-closeButton {
         position: absolute;
         top: 10px;
